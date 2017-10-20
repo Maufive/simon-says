@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simon says game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://use.fontawesome.com/f73dd3f2a3.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="title">Simon says game</h1>
+  </div>
+  <div class="playingField">
+    <div class="main">
+    	<div class="quarter redButton" id="btn0"></div>
+    	<div class="quarter blueButton" id="btn1"></div>
+    	<div class="quarter yellowButton" id="btn2"></div>
+    	<div class="quarter greenButton" id="btn3"></div>
+    	<div class="cutout"></div>
+    </div>
+  </div>
+    <div class="scoreboard">
+      <h3 class="displayScore">0 / 20 </h3>
+      <h3 class="notification"></h3>
+      <div class="controls">
+        <button class="reset button" onclick="init()">RESET</button>
+        <button class="start button" onclick="newGame()">START</button>
+      </div>
+      <h4 style="margin-top:0">TOGGLE HARDMODE <input type="checkbox" class="check" value="off"/></h4>
+      <!-- <button class="hardmode button" onclick="changeMode('Hard')">TOGGLE HARD MODE</button> -->
+    </div>
+  </div>
+</div>
+
+
+
+<script src="scripts/app.js"></script>
+</body>
+</html>
